@@ -56,6 +56,7 @@ int precedence(char operator_element)
         return 2;
     if (operator_element == '+' || operator_element == '-')
         return 1;
+    return 0;
 }
 
 int check_precedence(char in_operator, char stck_operator)
