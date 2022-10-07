@@ -15,16 +15,13 @@ int main () {
 
     cout << "\nMatrix : " << endl;
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 4; j++) {
             cout << setw(5) << matrix[i][j];
-        cout << endl;
-    }
-
-    for (int i = 0; i < 3; i++)
-        for (int j = 0; j < 4; j++)
             if (matrix[i][j] != 0)
                 non_zero++;
-
+        }
+        cout << endl;
+    }
 
     int sparce_matrix[3][non_zero];
     
