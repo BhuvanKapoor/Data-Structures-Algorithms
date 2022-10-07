@@ -23,10 +23,8 @@ int main () {
     int matrix [row][col], k = 0;
 
     for (int i = 0; i < row; i++)
-        for (int j = 0; j < col; j++) {
-            matrix[i][j] = arr[k];
-            k++;
-        }
+        for (int j = 0; j < col; j++)
+            matrix[i][j] = arr[k++];
 
     cout << "\nRow Major Matrix " << endl;
     for (int i = 0; i < row; i++) {
