@@ -42,6 +42,10 @@ class stack {
             else
                 cout << "\nStack is Empty !!";
         }
+    
+        void Peek() {
+            cout << "\nTop Element : " << top->info;
+        }
 
         void Display() {
             node *temp;
@@ -69,8 +73,9 @@ int main () {
         cout << "\n***********************************";
         cout << "\n1. Insert";
         cout << "\n2. Delete";
-        cout << "\n3. Display";
-        cout << "\n4. Exit";
+        cout << "\n3. Peek";
+        cout << "\n4. Display";
+        cout << "\n5. Exit";
         cout << "\nEnter your choice : ";
         cin >> option;
 
@@ -81,10 +86,13 @@ int main () {
             case 2: s.Delete(); 
                 break;
 
-            case 3: s.Display();
+            case 3: s.Peek();
                 break;
 
-            case 4: cout << "\nExitting !!";
+            case 4: s.Display();
+                break;
+
+            case 5: cout << "\nExitting !!";
                     exit(0);
                 break;
             
